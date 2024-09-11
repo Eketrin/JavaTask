@@ -1,9 +1,5 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
-
-import static java.util.Collections.min;
-import static java.util.Collections.sort;
-
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -11,12 +7,12 @@ public class Main {
         //Задача 1: Четное или нечетное число
         //Условие:
         //Пользователь вводит целое число. Программа должна вывести, является ли это число четным или нечетным.
-        /*System.out.print("Введите число: ");
+        System.out.print("Введите число: ");
         int x = in.nextInt();
         if (x %2 == 0){
             System.out.println("чётное");
         }
-        else System.out.println("нечётное");*/
+        else System.out.println("нечётное");
 
         //Задача 2: Минимальное из трех чисел
         //Условие:
