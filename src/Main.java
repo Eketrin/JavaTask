@@ -7,12 +7,12 @@ public class Main {
         //Задача 1: Четное или нечетное число
         //Условие:
         //Пользователь вводит целое число. Программа должна вывести, является ли это число четным или нечетным.
-        System.out.print("Введите число: ");
+        /*System.out.print("Введите число: ");
         int x = in.nextInt();
         if (x %2 == 0){
             System.out.println("чётное");
         }
-        else System.out.println("нечётное");//
+        else System.out.println("нечётное");*/
 
         //Задача 2: Минимальное из трех чисел
         //Условие:
@@ -221,29 +221,25 @@ public class Main {
 
         //Задача 17: Простые числа в диапазоне
         //Условие:
-        //Пользователь вводит два целых числа A и B. Программа должна вывести все простые числа
-        // в этом диапазоне (включительно).
+        //Пользователь вводит два целых числа A и B. Программа должна вывести все простые числа в этом диапазоне (включительно).
 
-//        int a = in.nextInt();
-//        int b = in.nextInt();
-//        int x = 0;
-//        for (int x = a; x <= b; x++) {
-//            boolean simpl = true;
-//
-//            for (int i = 2; i*i <= x; i++) {
-//                if (x % i == 0) {
-//                    simpl = false;
-//                    break;
-//                }
-//                if (x == 0 | x==1 ){
-//                    simpl = false;
-//                    break;
-//                }
-//            }
-//        }
-//        //System.out.print(simpl ? x+" " : "");
-
-
+        /*int a = in.nextInt();
+        int b = in.nextInt();
+        boolean flag = true;
+        for (int i = a; i <= b; i++) {
+            if (i <= 1) {
+                flag = false;
+            }
+            for (int n = 2; n <= Math.sqrt(i); n++) {
+                if (i % n == 0) {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                System.out.println(i);
+            }
+            flag = true;
+        }*/
 
 
         //Задача 18: Подсчет гласных и согласных в строке
@@ -252,6 +248,18 @@ public class Main {
         // и согласных букв в этой строке.
 
 
+        /*int glasn = 0;
+        int sogl = 0;
+        String input = in.nextLine().toLowerCase();
+        for (char ch : input.toCharArray()) {
+            if ("аеёиоуыэюя".indexOf(ch) != -1) {
+                glasn++;
+            } else if (Character.isLetter(ch)) {
+                sogl++;
+            }
+        }
+        System.out.println("Гласных: " + glasn);
+        System.out.println("Согласных: " + sogl);*/
 
         //Задача 19: Перестановка слов в строке
         //Условие:
@@ -259,10 +267,29 @@ public class Main {
         // слова в обратном порядке.
 
 
+        /*String[] words = in.nextLine().split(" ");
+        StringBuilder otv = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            otv.append(words[i]).append(" ");
+        }
+        System.out.println(otv.toString().trim());*/
+
         //Задача 20: Число Армстронга
         //Условие:
         //Пользователь вводит целое число. Программа должна проверить, является ли это число
         //числом Армстронга (сумма цифр в степени, равной количеству цифр, равна самому числу).
+
+        /*int num = in.nextInt();
+        int num1 = num;
+        int countDigit = String.valueOf(num).length();
+        int sum = 0;
+        while (num != 0) {
+            int digit = num % 10;
+            sum += Math.pow(digit, countDigit);
+            num /= 10;
+        }
+        System.out.println( sum == num1? "Это число Армстронга":"Это НЕ число Армстронга");*/
+
 
     }
 }
