@@ -12,7 +12,7 @@ public class Main {
         if (x %2 == 0){
             System.out.println("чётное");
         }
-        else System.out.println("нечётное");
+        else System.out.println("нечётное");//
 
         //Задача 2: Минимальное из трех чисел
         //Условие:
